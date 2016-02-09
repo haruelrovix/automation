@@ -43,18 +43,18 @@ public class SearchTest {
 
 		return Arrays.asList(data);
 	}
-	
+
 	@Before
-    public void setUp(){
-    	// Get the browser
-        driver = browser;
+	public void setUp() {
+		// Get the browser
+		driver = browser;
 
 		// Wait for 10 seconds before throwing an exception
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		// Launch the Automation Practice website
 		driver.get("http://automationpractice.com");
-    }
+	}
 
 	@Test
 	public void testSearchBoxExists() {
